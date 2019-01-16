@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Design: Internet & Web 101</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Internet &amp; Web 101</h1>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Origins of the Internet</h2>
+
+        <p>Defense Advanced Research Projects Agency (<abbr title="Defense Advanced Research Projects Agency">DARPA</abbr>) needed:</p>
+
+        <ul>
+          <li>to share computer resources</li>
+          <li>secure communications in a crisis (i.e. nuclear war)</li>
+        </ul>
+
+        <p>The project resulted in ARPANET, a four-node network unveiled in 1969.</p>
+      </section>
+
+
+      <section>
+        <h2>ARPANET, 1969</h2>
+
+        <img src="img/01-arpanet.png" alt="ARPANET, 1969" />
+
+        <ol>
+          <li>University of California, Los Angeles</li>
+          <li>Stanford Research Institute</li>
+          <li>University of California, Santa Barbara</li>
+          <li>University of Utah</li>
+        </ol>
+      </section>
+
+
+      <section>
+        <h2>'lo' and Behold!</h2>
+
+        <p>The first message transmitted on ARPANET:</p>
+
+        <p><code>lo</code></p>
+
+        <p>It was supposed to be login, but the computer crashed.</p>
+      </section>
+
+
+      <section>
+        <h2>Beyond ARPANET</h2>
+
+        <ul>
+          <li><strong>1981</strong>: Grew to 213 host computers</li>
+          <li><strong>1985</strong>: Evolves into NSFNet — the Internet's backbone</li>
+          <li><strong>1990</strong>: ARPANET decommissioned</li>
+          <li><strong>1995</strong>: NSFNet decommissioned; commercial traffic permitted</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>ARPANET lessons</h2>
+
+        <ul>
+          <li>Standard communication protocols
+            <ul>
+              <li>Transmission Control Protocol (<abbr title="Transmission Control Protocol">TCP</abbr>)</li>
+              <li>Internet Protocol (<abbr title="Internet Protocol">IP</abbr>)</li>
+            </ul>
+          </li>
+          <li>Applications
+            <ul>
+              <li>E-mail</li>
+              <li>File Transfer Protocol (<abbr title="File Transfer Protocol">FTP</abbr>)</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>TCP</h2>
+
+        <ol>
+          <li>Computer A breaks a file into <em>packets</em>, attaches metadata</li>
+          <li>Packets are sent over a network to Computer B</li>
+          <li>Computer B reassembles packets, verifies the file is correct</li>
+        </ol>
+
+        <p>If the file is incomplete, Computer B refers to the metadata as if it were a checklist and request Computer A re-send the missing packet.</p>
+      </section>
+
+
+      <section>
+        <h2>IP</h2>
+
+        <ul>
+          <li>Determines the path across a network which packets travel</li>
+          <li>Provides each node with a unique address</li>
+        </ul>
+
+        <p>A node may be anything connected to a network, in this case, the Internet.</p>
+      </section>
+
+
+      <section>
+        <h2>Every device in the world (circa 2014)</h2>
+
+        <img src="img/01-internet-map.png" alt="Shodan Internet Map, 2014" />
+      </section>
+
+
+      <section>
+        <h2>IP Addresses</h2>
+
+        <ul>
+          <li>Identifies location on the Internet and geographically</li>
+          <li><a href="https://iplocation.com/">What is your IP address?</a></li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Domain Names</h2>
+
+        <ul>
+          <li>A directory for the Internet</li>
+          <li>Each domain is mapped to an IP address
+            <ul>
+              <li><a href="http://172.217.9.142">172.217.9.142</a> = <a href="http://google.com">google.com</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <p>A <em>Domain Name Server (<abbr title="Domain Name Server">DNS</abbr>)</em> routes requests to the correct IP address.</p>
+      </section>
+
+
+      <section>
+        <h2>Anatomy of a Domain Name</h2>
+
+        <p><strong>www.google.com</strong></p>
+
+        <ul>
+          <li><strong>com</strong>: top-level domain</li>
+          <li><strong>google</strong>: domain
+            <ul>
+              <li>we can reserve these for our own use</li>
+            </ul>
+          </li>
+          <li><strong>www</strong>: subdomain
+            <ul>
+              <li>optional</li>
+              <li>used to point one domain to multiple servers</li>
+            </ul>
+          </li>
+        </ul>
+
+        <p>Combined, these create a <em>fully qualified domain name</em>.</p>
+      </section>
+
+
+      <section>
+        <h2>Getting a domain name</h2>
+
+        <ul>
+          <li>Obtained through a <em>domain name registrar</em></li>
+          <li>Fees very depending on name, registrar</li>
+          <li>Country codes (i.e. <code>.us</code>) may have limitations</li>
+          <li>Minimum one-year lease</li>
+          <li>No one 'owns' a domain</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Hypertext</h2>
+
+        <p>A software system which links information.</p>
+
+        <p><em>Hyperlinks</em> are reference points which connect an element (word, phrase, image) to another document providing more information.</p>
+      </section>
+
+
+      <section>
+        <h2>Origins of the Web</h2>
+
+        <p>The World Wide Web (<abbr title="World Wide Web">WWW</abbr>) is an Internet-based hypertext system.</p>
+
+        <ul>
+          <li><strong>1989</strong>: Proposed by Sir Tim Berners-Lee & Robert Cailliau</li>
+          <li><strong>1991</strong>: Software released to public</li>
+          <li><strong>Aug. 1992</strong>: 26 web sites</li>
+          <li><strong>Dec. 1993</strong>: 632 web sites</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>The First Site</h2>
+
+        <img src="img/01-first-web-site.png" alt="info.cern.ch" />
+
+        <p><a href="http://info.cern.ch">info.cern.ch</a></p>
+      </section>
+
+
+      <section>
+        <h2>WWW Lessons</h2>
+
+        <ul>
+          <li><strong><abbr title="Uniform Resource Locator">URL</abbr></strong>: Uniform Resource Locator</li>
+          <li><strong><abbr title="Hypertext Transfer Protocol">HTTP</abbr></strong>: Hypertext Transfer Protocol</li>
+          <li><strong><abbr title="Hypertext Markup Language">HTML</abbr></strong>: Hypertext Markup Language</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>URL</h2>
+
+        <ul>
+          <li>A unique address for a file on the web</li>
+          <li>No two files can have the same URL</li>
+          <li>Two parts:
+            <ul>
+              <li>How is the file transferred (<code>http</code> or <code>https</code>)?</li>
+              <li>The location of the file</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>HTTP</h2>
+
+        <ol>
+          <li>A browser requests a file from a serve.</li>
+          <li>The server acknowledges the request, sends a response:
+            <ul>
+              <li><strong>200</strong>: Okay! (file is sent)</li>
+              <li><strong>404</strong>: File not found</li>
+              <li><strong>500</strong>: Server error (URL may be right)</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+
+      <section>
+        <h2>HTML</h2>
+
+        <p>We will begin learning this next week.</p>
+      </section>
+
+
+      <section>
+        <h2>Web Languages</h2>
+
+        <ul>
+          <li><strong>HTML</strong>: describes the structure, semantics of content</li>
+          <li><strong><abbr title="Cascading Style Sheets">CSS</abbr></strong>: presents content for different media</li>
+          <li><strong>JavaScript</strong>: influences behavior of the document</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Web Standards</h2>
+
+        <ul>
+          <li>Developed by the <a href="http://w3.org">W3C</a></li>
+          <li>Assures web sites are forward, backward compatible</li>
+        </ul>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+      <p><a href="index.html">&laquo; Course Notes</a></p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Design: Introduction to HTML</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Introduction to HTML</h1>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>HyperText Markup Language</h2>
+
+        <p>HTML is <em>semantic</em>. Use the language to <em>describe content</em>.</p>
+      </section>
+
+
+      <section>
+        <h2>Elements</h2>
+
+        <p>Elements are also known as "tags."</p>
+
+        <p>(Most) elements have an opening and closing tag.</p>
+
+        <p><code>&lt;element&gt;content&lt;/element&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2>Attributes &amp; Values</h2>
+
+        <p>Elements may contain additional "settings" — <em>attributes</em> and their <em>values</em>.</p>
+
+        <p>Attributes (and values) only appear in the opening tag.</p>
+
+        <p><code>&lt;element attribute="value"&gt;content&lt;/element&gt;</code></p>
+      </section>
+
+
+      <section>
+        <p><code>&lt;p class="intro"&gt;This is a sentence.&lt;/p&gt;</code></p>
+
+        <ol>
+          <li>What is the <strong>element</strong>?</li>
+          <li>What is the <strong>attribute</strong>?</li>
+          <li>What is the <strong>value</strong>?</li>
+        </ol>
+      </section>
+
+
+      <section>
+        <p><code>&lt;a href="http://miami.edu"&gt;University of Miami&lt;/a&gt;</code></p>
+
+        <ol>
+          <li>What is the <strong>element</strong>?</li>
+          <li>What is the <strong>attribute</strong>?
+            <ul>
+              <li>What do you think the attribute means?</li>
+            </ul>
+          </li>
+          <li>What is the <strong>value</strong>?
+            <ul>
+              <li>The value is also known as a...?</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+
+      <section>
+        <h2>Basic Elements</h2>
+
+        <p>Basic elements describe our page.</p>
+
+        <p><code>&lt;html&gt;</code>: defines the HTML document.</p>
+
+        <p><code>&lt;head&gt;</code>: contains information about the document.</p>
+
+        <p><code>&lt;body&gt;</code>: contains content to be displayed in the browser window.</p>
+      </section>
+
+
+      <section>
+        <h2>Semantic Elements</h2>
+
+        <p><code>&lt;h1&gt;</code> ... <code>&lt;h6&gt;</code>: headings</p>
+
+        <p><code>&lt;p&gt;</code>: paragraph</p>
+
+        <p><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>: unordered, ordered list</p>
+
+        <p><code>&lt;li&gt;</code>: list item</p>
+
+        <p><code>&lt;a&gt;</code>: hyperlink</p>
+
+        <p><code>&lt;em&gt;</code>: emphasis (renders italic)</p>
+      </section>
+
+
+      <section>
+        <h2>Structural Elements</h2>
+
+        <p>Structural elements describe parts of a page. These often group multiple semantic elements.</p>
+
+        <p><code>&lt;header&gt;</code>: masthead</p>
+
+        <p><code>&lt;nav&gt;</code>: site navigation</p>
+
+        <p><code>&lt;footer&gt;</code>: footer</p>
+      </section>
+
+
+      <section>
+        <h2>Generic Elements</h2>
+
+        <p>Elements used to solely to group other elements for the purpose of styling.</p>
+
+        <p><code>&lt;div&gt;</code>: a generic block element</p>
+
+        <p><code>&lt;span&gt;</code>: a generic inline element</p>
+      </section>
+
+
+      <section>
+        <h2>Self-closing elements</h2>
+
+        <p>Elements which do not surround content are self-closing.</p>
+
+        <p>A slash is placed at the end of an opening tag.</p>
+
+        <p><code>&lt;img /&gt;</code>: an image</p>
+
+        <p><code>&lt;meta /&gt;</code> page information</p>
+      </section>
+
+
+      <section>
+        <h2>Comments</h2>
+
+        <p>Comments are notes added to code do not appear in the browser.</p>
+
+        <p>Think of them as documentation or reminders to your future self!</p>
+
+        <p><code>&lt;!-- This is a comment! --&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2>Why do my pages look ugly?</h2>
+
+        <p>Browsers have default styles for elements.
+
+        <p>These can (and will!) be changed when you learn CSS.</p>
+
+        <p>Don't worry. HTML has nothing to do with how a page <em>looks</em>.</p>
+      </section>
+
+
+      <section>
+        <h2>How will I memorize all these tags?!</h2>
+
+        <p><strong>Don't.</strong> Become comfortable with reference material instead.</p>
+
+        <p><strong>Good</strong>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developers Network: HTML Elements Reference</a></p>
+
+
+        <p>(Do not use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Obsolete_and_deprecated_elements">obsolete and deprecated elements!</a>)</p>
+
+        <p><strong>Bad</strong>: W3Schools</p>
+      </section>
+
+
+      <section>
+        <h2>How to become familiar with HTML</h2>
+
+        <ul>
+          <li>Read your book (Part II).</li>
+          <li>Review the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN: HTML Elements Reference</a></li>
+          <li>Keep a notebook with your findings
+            <ul>
+              <li>What is the tag used for?</li>
+              <li>What does it do in the browser?</li>
+              <li>Does it need to be used with other tags?</li>
+              <li>Does it need attributes to work?</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <p><a href="index.html">&laquo; Course Notes</a></p>
+    </footer>
+
+  </body>
+</html>
